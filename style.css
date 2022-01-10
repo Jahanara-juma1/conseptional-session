@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Heebo:wght@300;400;500&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 500px;
+}
+body{
+background-color: black;
+font-family: 'Heebo', sans-serif;
+}
+
+.banner{
+    display: flex;
+    height: 100vh;
+}
+.banner-left{
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
