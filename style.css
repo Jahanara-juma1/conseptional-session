@@ -3,13 +3,17 @@
 *{
     margin: 0;
     padding: 0;
-}
-img{
-    width: 500px;
-}
+    }
+    img{
+        width: 500px;
+    }
 body{
 background-color: black;
 font-family: 'Heebo', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .banner{
@@ -27,4 +31,103 @@ font-family: 'Heebo', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* banner animation */
+.banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+}
+.banner-title::before{
+    content: 'Juma Miss World';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: cyan;
+    animation: typing 3s linear infinite;
+}
+
+@keyframes typing{
+    0%{
+        content: 'J|';
+    }
+    4%{
+        content: 'Ju|';
+    }
+    8%{
+        content: 'Jum|';
+    }
+    12%{
+        content: 'Juma|';
+    }
+    16%{
+        content: 'Juma M|';
+    }
+    20%{
+        content: 'Juma Mi|';
+    }
+    24%{
+        content: 'Juma Mis|';
+    }
+    28%{
+        content: 'Juma Miss|';
+    }
+    32%{
+        content: 'Juma Miss W|';
+    }
+    36%{
+        content: 'Juma Miss Wo|';
+    }
+    40%{
+        content: 'Juma Miss Wor|';
+    }
+    44%{
+        content: 'Juma Miss Worl|';
+    }
+    48%{
+        content: 'Juma Miss World|';
+    }
+    52%,
+    72%{
+        content: 'Juma Miss World|';
+    }
+    73%{
+        content: 'Juma Miss Worl|';
+    }
+    74%{
+        content: 'Juma Miss Wor|';
+    }
+    75%{
+        content: 'Juma Miss Wo|';
+    }
+    76%{
+        content: 'Juma Miss W|';
+    }
+    77%{
+        content: 'Juma Miss|';
+    }
+    78%{
+        content: 'Juma Mis|';
+    }
+    79%{
+        content: 'Juma Mi|';
+    }
+    80%{
+        content: 'Juma M|';
+    }
+    81%{
+        content: 'Juma|';
+    }
+    82%{
+        content: 'Jum|';
+    }
+    83%{
+        content: 'Ju|';
+    }
+    84%{
+        content: 'J|';
+    }
+    85%{
+        content: '|';
+    }
 }
